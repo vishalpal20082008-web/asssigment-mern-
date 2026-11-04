@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Registration Form</title>
+    <title>Complete Form</title>
 </head>
 <body>
 
-    <h1>Registration Form</h1>
+    <h1>Student Registration Form</h1>
 
     <form>
+
         <label for="name">Name:</label>
         <input type="text" id="name" name="name">
         <br><br>
@@ -20,7 +21,46 @@
         <input type="password" id="password" name="password">
         <br><br>
 
-        <input type="submit" value="Register">
+        <label for="date">Date of Birth:</label>
+        <input type="date" id="date" name="date">
+        <br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+        <br><br>
+
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <p>Hobbies:</p>
+        <input type="checkbox" id="cricket" name="hobby" value="Cricket">
+        <label for="cricket">Cricket</label>
+
+        <input type="checkbox" id="coding" name="hobby" value="Coding">
+        <label for="coding">Coding</label>
+        <br><br>
+
+        <label for="course">Select Course:</label>
+        <select id="course" name="course">
+            <option>B.Tech CSE</option>
+            <option>B.Tech IT</option>
+            <option>BCA</option>
+            <option>MCA</option>
+        </select>
+        <br><br>
+
+        <label for="message">Message:</label>
+        <br>
+        <textarea id="message" name="message" rows="5" cols="30"></textarea>
+        <br><br>
+
+        <button type="submit">Submit</button>
+
     </form>
 
 </body>
